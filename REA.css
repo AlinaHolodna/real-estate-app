@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
@@ -8,6 +10,8 @@ body {
         linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
         url("img/unsplash.png");
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-position: center;
     font-family: 'Lato', sans-serif;
 
@@ -33,11 +37,14 @@ form {
 }
 
 .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 24px;
 }
 
 input {
-    width: 100%;
+    width: 336px;
     height: 55px;
 
     padding: 0 16px;
@@ -60,8 +67,8 @@ input::placeholder {
     color: #A09F99;
 }
 
-label {
-    display: block;
+.form-group > label {
+    width: 336px;
     margin-bottom: 8px;
 
     font-size: 16px;
@@ -90,6 +97,9 @@ label {
 }
 
 .option {
+    width: 336px;
+    margin: 0 auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,6 +118,7 @@ label {
 }
 
 .checkbox-label {
+    width: auto;
     margin-bottom: 0;
 }
 
@@ -146,3 +157,20 @@ label {
     left: 22px;
 }
 
+.login-btn {
+    display: block;
+    width: 336px;
+    height: 55px;
+
+    padding: 10px 60px;
+    margin: 30px auto 0;
+
+    border-radius: 10px;
+    background-color: #0ACF83;
+
+    font-family: 'Lato';
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: #FFFFFF;
+}
