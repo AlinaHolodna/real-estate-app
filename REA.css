@@ -30,6 +30,69 @@ h1 {
     padding: 0 16px;
 }
 
+main {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+.logo-text h1,
+.logo-text p {
+    margin: 0;
+    text-align: left;
+}
+
+.red,
+.white {
+    font-family: 'Inter';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.red {
+    color: #0ACF83;
+}
+
+.logo-text p {
+    font-family: 'Inter';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 50%;
+    color: #FFFFFF;
+}
+
+.logo-link {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-decoration: none;
+    transition: transform .2s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.02);
+}
+
 form {
     display: flex;
     flex-direction: column;
